@@ -61,7 +61,7 @@ export default function Home() {
       className="absolute w-[1600px] h-64 bg-white/10 rounded-2xl text-center text-7xl font-extrabold text-fuchsia-400/40 backdrop-blur-sm flex items-center justify-center mx-auto z-0 border-none"
       style={{ top }}
     >
-      MAHISRITH
+      
     </motion.div>
   );
 
