@@ -141,7 +141,19 @@ export default function Home() {
         <div className={sectionBoxClass}>
           <h2 className="text-4xl font-bold mb-6 text-fuchsia-500 text-center">About Me</h2>
           <p className="text-gray-300 leading-relaxed text-lg text-center">
-            Hi, I’m Vemula Sai Mahisrith [...] 🚀💡
+            Hi, I’m Vemula Sai Mahisrith, a curious and ambitious learner who just completed 12th with an MPC background and secured 97% in my CBSE boards.
+
+I’m fascinated by the way engineering, code, and imagination come together to shape the future — whether in the skies, in space, or through software.
+
+Right now, I’m exploring opportunities in aerospace engineering, while also building a strong foundation in programming, problem-solving, and modern tech.
+
+From intelligent flight systems to advanced software tools, I’m drawn to the possibilities where science meets innovation.
+
+My journey is just beginning — and I’m keeping an open mind. Whether I continue in aerospace or move deeper into computer science, my focus is clear: to learn deeply, build boldly, and contribute meaningfully to the world of technology.
+
+I’m always looking to connect with inspiring minds, collaborate on ideas, and grow through curiosity and challenge. 🚀💡
+
+
           </p>
         </div>
       </motion.section>
@@ -150,7 +162,9 @@ export default function Home() {
       <motion.section id="education" {...getSectionProps('right')} className={`max-w-4xl mx-auto py-20 px-4 ${getSectionProps('right').className}`}>
         <div className={sectionBoxClass + " text-center"}>
           <h2 className="text-4xl font-bold mb-6 text-cyan-400">Education</h2>
-          <p className="text-lg text-gray-300">Completed 12th Grade (CBSE) in 2025 with 97% [...]</p>
+          <p className="text-lg text-gray-300">Completed 12th Grade (CBSE) in 2025 with 97% from Sri Sathya Sai Higher Secondary School in the MPC stream.
+            
+        Subjects: Mathematics, Physics, Chemistry,Computer Science</p>
         </div>
       </motion.section>
 
@@ -169,14 +183,26 @@ export default function Home() {
         <h2 className="text-4xl font-bold mb-6 text-fuchsia-400 text-center">Projects</h2>
         <div className={sectionBoxClass}>
           <h3 className="text-2xl font-semibold mb-2">Zombie Survival Game</h3>
-          <p className="text-gray-300">A top-down survival horror game built in Python using Pygame [...]</p>
+          <p className="text-gray-300">A top-down survival horror game built in Python using Pygame.
+Navigate a huge maze while being chased by animated zombie sprites.
+Collect keys to unlock the final exit door while avoiding enemies.
+Features:
+
+Collectible shields that temporarily despawn zombies
+
+A minimap
+
+Animated effects
+
+Strategic AI enemy behavior</p>
         </div>
       </motion.section>
 
       {/* Contact */}
       <motion.section id="contact" {...getSectionProps('left')} className={`max-w-3xl mx-auto py-20 px-4 text-center ${getSectionProps('left').className}`}>
         <h2 className="text-4xl font-bold mb-6 text-indigo-500">Get in Touch</h2>
-        <p className="text-gray-300 mb-6">Want to connect or collaborate? [...]</p>
+        <p className="text-gray-300 mb-6">Want to connect or collaborate? Reach me at
+✉️ sai.mahisrithv@outlook.com</p>
         <form action="https://formsubmit.co/sai.mahisrithv@outlook.com" method="POST" className="grid gap-4 text-left">
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="box" />
