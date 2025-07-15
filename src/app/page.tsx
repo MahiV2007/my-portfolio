@@ -263,7 +263,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-6 text-cyan-400">About Me</h2>
           <div className="h-1 w-16 mx-auto md:mx-0 mb-8 bg-gradient-to-r from-fuchsia-500 via-purple-400 to-cyan-400 rounded-full"></div>
           <p className="text-gray-300 mb-4 text-lg leading-relaxed">
-            Hi, I'm Vemula Sai Mahisrith Hi — a curious and creative mind who enjoys turning ideas into real, working projects. I'm passionate about technology, especially software development, game development, and aerospace. I’ve always been fascinated by how things move — whether it's a character in a game or an aircraft in the sky.
+            Hi, I'm Vemula Sai Mahisrith — a curious and creative mind who enjoys turning ideas into real, working projects. I'm passionate about technology, especially software development, game development, and aerospace. I’ve always been fascinated by how things move — whether it's a character in a game or an aircraft in the sky.
           </p>
           <p className="text-gray-300 mb-6 text-lg leading-relaxed">
             In my free time, I enjoy designing, video editing, and experimenting with code. I've created projects like a zombie survival game with custom enemy AI and this portfolio website you're looking at — all through self-learning, problem-solving, and a lot of trial and error.
