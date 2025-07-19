@@ -1,4 +1,3 @@
-// src/app/layout.tsx (or src/layout.tsx)
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -10,19 +9,22 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   title: "Sai Mahisrith | Aerospace & Tech Explorer",
   description: "Official personal portfolio of Sai Mahisrith – showcasing passion in aerospace, programming, and futuristic innovation.",
-  authors: [{ name: "Sai Mahisrith Vemula", url: "https://your-portfolio-url.com" }],
+  authors: [{ name: "Sai Mahisrith Vemula", url: "https://saimahisrith-portfolio.vercel.app/" }],
   keywords: ["Sai Mahisrith", "Aerospace", "Portfolio", "Developer", "Tech", "Pygame"],
-  icons: {
-    icon: "/favicon.ico",
-  },
+  icons: { icon: "/favicon.ico" }
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <head>
-        {/* Google Analytics */}
+        {/* Google tag (gtag.js) */}
         <Script
+          async
           src="https://www.googletagmanager.com/gtag/js?id=G-YHPYXPCRS4"
           strategy="afterInteractive"
         />
@@ -31,9 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-YHPYXPCRS4', {
-              page_path: window.location.pathname,
-            });
+            gtag('config', 'G-YHPYXPCRS4');
           `}
         </Script>
       </head>
