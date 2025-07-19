@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: "Sai Mahisrith | Aerospace & Tech Explorer",
   description:
     "Official personal portfolio of Sai Mahisrith – showcasing passion in aerospace, programming, and futuristic innovation.",
-  authors: [{ name: "Sai Mahisrith Vemula", url: "https://your-portfolio-url.com" }],
+  authors: [{ name: "Sai Mahisrith Vemula", url: "https://saimahisrith-portfolio.vercel.app/" }],
   keywords: ["Sai Mahisrith", "Aerospace", "Portfolio", "Developer", "Tech", "Pygame"],
   icons: {
     icon: "/favicon.ico",
