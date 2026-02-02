@@ -350,7 +350,7 @@ export default function Home() {
             className="rounded-full overflow-hidden w-100 h-100 border-4 border-cyan-400 shadow-lg"
           >
             <Image
-              src="/Photo.png" // Replace with your image path
+              src="/photo.png" // Replace with your image path
               alt="Sai Mahisrith"
               width={320}
               height={320}
