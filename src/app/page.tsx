@@ -1,9 +1,4 @@
-    // {
-    //   date: "Expected Jun 2027",
-    //   title: "B.Tech in Computer Science Core",
-    //   place: "VIT Chennai",
-    //   info: "Current CGPA: 9.1",
-    // },
+
 
 
 // src/app/page.tsx
@@ -95,6 +90,13 @@ export default function Home() {
   const sectionBoxClass = "bg-fuchsia-900/20 p-6 rounded-3xl shadow-lg backdrop-blur-sm";
 
   const eduItems = [
+
+    {
+      date: "Expected Jun 2029",
+      title: "B.Tech in Aerospace Engineering",
+      place: "M S Ramaiah Institute of Technology, Bangalore",
+      info: "Joined STUDIO RIT Club",
+    },
     {
       date: "May 2025",
       title: "CBSE (12th Grade)",
@@ -107,6 +109,7 @@ export default function Home() {
       place: "Sri Sathya Sai Higher Secondary School, Puttaparthi",
       info: "91.8% overall\nScience, Mathematics, English, Social Studies, Sanskrit",
     },
+
   ];
 
   const features = [
@@ -157,6 +160,52 @@ export default function Home() {
     },
     // more boxes...
   ];
+
+  const features2 = [
+  {
+    title: "⚙️ Core Engine Features",
+    desc: [
+      "📥 Order intake (Buy / Sell)",
+      "📊 Price–time priority matching",
+      "🔄 Partial & full order fills",
+      "📤 Order execution simulation",
+      "🧮 Order book state tracking"
+    ],
+    symbol: ""
+  },
+  {
+    title: "🧠 Data Structures & Logic",
+    desc: [
+      "🗂️ Structured order book design",
+      "⏱️ Deterministic matching flow",
+      "🔁 Efficient insert & match operations",
+      "📐 Clean separation of engine components"
+    ],
+    symbol: ""
+  },
+  {
+    title: "🛠️ Tech Stack",
+    desc: [
+      "💻 Language: C++",
+      "📦 STL (maps, vectors, queues)",
+      "🖥️ IDE: VS Code",
+      "🧰 Tools: Git, GitHub",
+      "🧪 Manual test cases for validation"
+    ],
+    symbol: ""
+  },
+  {
+    title: "🚀 What I Learned",
+    desc: [
+      " Designing performance-aware systems",
+      " Applying data structures to real problems",
+      " Writing deterministic and testable logic",
+      " Thinking in terms of latency & correctness"
+    ],
+    symbol: "✅"
+  }
+];
+
 
 
   return (
@@ -263,14 +312,16 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-6 text-cyan-400">About Me</h2>
           <div className="h-1 w-16 mx-auto md:mx-0 mb-8 bg-gradient-to-r from-fuchsia-500 via-purple-400 to-cyan-400 rounded-full"></div>
           <p className="text-gray-300 mb-4 text-lg leading-relaxed">
-            Hi, I'm Vemula Sai Mahisrith — a curious and creative mind who enjoys turning ideas into real, working projects. I'm passionate about technology, especially software development, game development, and aerospace. I’ve always been fascinated by how things move — whether it's a character in a game or an aircraft in the sky.
+            Hi, I’m Vemula Sai Mahisrith — a curious learner who enjoys building and understanding how systems work, from software to engineering-driven projects.I like working on projects that involve structured problem-solving and careful implementation.
           </p>
           <p className="text-gray-300 mb-6 text-lg leading-relaxed">
-            In my free time, I enjoy designing, video editing, and experimenting with code. I've created projects like a zombie survival game with custom enemy AI and this portfolio website you're looking at — all through self-learning, problem-solving, and a lot of trial and error.
+             My work includes a C++ order-matching engine, where I focused on core logic, data structures, and correctness, as well as a top-down game project that helped me explore real-time logic, basic AI behavior, and interactive system design. Alongside this, I’ve built web projects, including this portfolio website.
           </p>
           <p className="text-gray-300 mb-6 text-lg leading-relaxed">
-            I'm still learning and improving every day, and I enjoy the process just as much as the result. My goal is to keep building, keep exploring, and make things that are both fun and meaningful.
-            Thanks for visiting my portfolio!
+            Beyond coding, I enjoy experimenting with design, video editing, and learning about emerging technologies. I value learning by building, iterating, and steadily improving my technical foundation.
+          </p>
+          <p className="text-gray-300 mb-6 text-lg leading-relaxed">
+            At present, I’m focused on developing solid fundamentals and creating meaningful projects while staying open to learning across domains. Thanks for taking the time to explore my work.
           </p>
           
           {/* Stats Boxes */}
@@ -441,7 +492,69 @@ export default function Home() {
         </div>
       </motion.section>
 
+<motion.section
+  id="projects"
+  {...getSectionProps('right')}
+  className={`max-w-6xl mx-auto py-20 px-4 text-center ${getSectionProps('right').className}`}
+>
+  <h3 className="text-3xl font-semibold text-indigo-300 mb-2">
+    📈 C++ Order Matching Engine
+  </h3>
+  <p className="text-gray-400 text-sm md:text-base mb-10">
+    Low-latency systems project | C++ | Core data structures & matching logic
+  </p>
 
+  {/* Overview Box */}
+  <div className="bg-white/5 text-gray-300 p-6 rounded-2xl mb-12 max-w-3xl mx-auto text-sm md:text-base backdrop-blur-md border border-white/10">
+    A simplified order-matching engine built in C++ to simulate how buy and sell orders are processed in real time.
+    The project focuses on deterministic matching logic, efficient data structures, and correctness under different order scenarios.
+  </div>
+
+  {/* Feature Grid */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+    {features2.map((feature, i) => (
+      <motion.div
+        key={i}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: i * 0.2 }}
+        viewport={{ once: true, amount: 0.5 }}
+        className="bg-black/30 p-6 rounded-xl shadow-md backdrop-blur-md"
+      >
+        <h4 className="text-lg font-bold text-fuchsia-400 mb-2">{feature.title}</h4>
+
+        <ul className="text-gray-300 space-y-2">
+          {feature.desc.map((point, j) => (
+            <motion.li
+              key={j}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4, delay: j * 0.15 }}
+              viewport={{ once: true, amount: 0.5 }}
+              className={`flex items-start ${feature.symbol ? 'gap-2' : ''}`}
+            >
+              {feature.symbol && <span className="text-cyan-400 mt-1">{feature.symbol}</span>}
+              <span>{point}</span>
+            </motion.li>
+          ))}
+        </ul>
+      </motion.div>
+    ))}
+  </div>
+
+  {/* GitHub Button */}
+  <div className="pt-12">
+    <a
+      href="https://github.com/MahiV2007/cpp-order-matching-engine" // ← replace with your repo
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block text-sm bg-fuchsia-600 hover:bg-fuchsia-700 transition text-white py-3 px-8 rounded-full"
+    >
+      View on GitHub
+    </a>
+  </div>
+</motion.section>
+         
 
 
       {/* Contact */}
@@ -529,7 +642,7 @@ export default function Home() {
     </div>
 
     {/* Copyright */}
-    <p className="text-sm text-gray-400">&copy; 2025 Sai Mahisrith. All rights reserved.</p>
+    <p className="text-sm text-gray-400">&copy; 2026 Sai Mahisrith. All rights reserved.</p>
   </div>
 </footer>
     </main>
